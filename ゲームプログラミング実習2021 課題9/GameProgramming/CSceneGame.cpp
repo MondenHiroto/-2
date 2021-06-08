@@ -22,7 +22,6 @@ void CSceneGame::Init() {
 
 }
 
-
 void CSceneGame::Update() {
 	//カメラのパラメータを作成する
 	CVector e, c, u;//視点、注視点、上方向

@@ -36,7 +36,7 @@ public:
 		if (mpTextureFilename){
 			delete[] mpTextureFilename;
 		}
-		mpTextureFilename = 0;
+		mpTextureFilename = nullptr;
 	}
 };
 

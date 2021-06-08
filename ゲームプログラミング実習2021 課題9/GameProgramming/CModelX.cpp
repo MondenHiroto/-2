@@ -2,10 +2,11 @@
 #include <stdio.h>
 #include "CModelX.h"
 #include <string.h>
+#include "CMaterial.h"
 
 void CModelX::Load(char * file){
 	//
-	//ファイルサイズを取得する
+	//ファイルサイズを取得する 
 	//
 	FILE *fp; //ファイルポインタ変数の作成
 
@@ -300,22 +301,22 @@ Render
 */
 void CMesh::Render(){
 	/*頂点データ、法線データの配列を有効にする*/
-	glEnableClientState(GL_VERTEX_ARRAY);
-	glEnableClientState(GL_NORMAL_ARRAY);
+	//glEnableClientState(GL_VERTEX_ARRAY);
+	//glEnableClientState(GL_NORMAL_ARRAY);
 
 	/*頂点データ、法線データの場所を指定する*/
-	glVertexPointer(3, GL_FLOAT, 0, mpVertex);
-	glNormalPointer(GL_FLOAT, 0, mpNormal);
+	//glVertexPointer(3, GL_FLOAT, 0, mpVertex);
+	//glNormalPointer(GL_FLOAT, 0, mpNormal);
 
 	/*頂点のインデックスの場所を指定して図形を描画する*/
 	for (int i = 0; i < mFaceNum; i++){
 		//マテリアルを適用する
 		mMaterial[mpMaterialIndex[i]]->Enabled();
-		glDrawElements(GL_TRIANGLES, 3 * mFaceNum, GL_UNSIGNED_INT, mpVertexIndex);
+		glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, (mpVertexIndex + i * 3));
 	}
 	/*頂点データ、法線データの配列を無効にする*/
-	glDisableClientState(GL_VERTEX_ARRAY);
-	glDisableClientState(GL_NORMAL_ARRAY);
+	//glDisableClientState(GL_VERTEX_ARRAY);
+	//glDisableClientState(GL_NORMAL_ARRAY);
 }
 
 /*
