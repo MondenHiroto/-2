@@ -1,15 +1,13 @@
-﻿2021/06/07 12:26:09 にビルドを開始しました。
+﻿2021/06/08 14:25:38 にビルドを開始しました。
      1>ノード 2 上のプロジェクト "C:\Users\81802\Desktop\Repository GamePrograming\Game-Programing\ゲームプログラミング実習2021 課題9\GameProgramming\GameProgramming.vcxproj" (Build ターゲット)。
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt CModelX.cpp CSceneGame.cpp
-         CSceneGame.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt CModelX.cpp
          CModelX.cpp
      1>c:\users\81802\desktop\repository gameprograming\game-programing\ゲームプログラミング実習2021 課題9\gameprogramming\cmodelx.cpp(13): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211) : 'fopen' の宣言を確認してください。
      1>c:\users\81802\desktop\repository gameprograming\game-programing\ゲームプログラミング実習2021 課題9\gameprogramming\cmodelx.cpp(137): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : 'strcpy' の宣言を確認してください。
      1>c:\users\81802\desktop\repository gameprograming\game-programing\ゲームプログラミング実習2021 課題9\gameprogramming\cmodelx.cpp(336): warning C4018: '<' : signed と unsigned の数値を比較しようとしました。
-         コードを生成中...
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\81802\Desktop\Repository GamePrograming\Game-Programing\ゲームプログラミング実習2021 課題9\Debug\GameProgramming.exe" /INCREMENTAL /NOLOGO glew32.lib glfw3.lib glfw3dll.lib glut32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\81802\Desktop\Repository GamePrograming\Game-Programing\ゲームプログラミング実習2021 課題9\Debug\GameProgramming.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\81802\Desktop\Repository GamePrograming\Game-Programing\ゲームプログラミング実習2021 課題9\Debug\GameProgramming.lib" /MACHINE:X86 Debug\CBillBoard.obj
          Debug\CBullet.obj
@@ -46,4 +44,4 @@
 
 ビルドに成功しました。
 
-経過時間 00:00:02.67
+経過時間 00:00:02.03
