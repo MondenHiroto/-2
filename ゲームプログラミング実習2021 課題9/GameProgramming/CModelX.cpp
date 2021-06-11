@@ -114,7 +114,6 @@ void CModelX::SkipNode(){
 		else if (strchr(mToken, '}')) count--;
 	}
 }
-
 /*
 CModelXFrame
 mpdel:CModelXインスタンスへのポインタ

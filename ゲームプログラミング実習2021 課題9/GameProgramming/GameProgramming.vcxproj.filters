@@ -207,4 +207,9 @@
       <Filter>ソース ファイル\Lib</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="sample.blend.x">
+      <Filter>ソース ファイル</Filter>
+    </None>
+  </ItemGroup>
 </Project>
