@@ -1,0 +1,76 @@
+﻿2021/07/09 13:49:30 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Users\81802\Desktop\Repository GamePrograming\Game-Programing\ゲームプログラミング実習2021\GameProgramming\GameProgramming.vcxproj" (Build ターゲット)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt CBillBoard.cpp CBullet.cpp CCharacter.cpp CCollider.cpp CColliderLine.cpp CColliderMesh.cpp CColliderTriangle.cpp CCollisionManager.cpp CEffect.cpp CEnemy.cpp CEnemy2.cpp CMaterial.cpp CModel.cpp CModelX.cpp CPlayer.cpp CRes.cpp CSceneGame.cpp
+         CBillBoard.cpp
+     1>c:\users\81802\desktop\repository gameprograming\game-programing\ゲームプログラミング実習2021\gameprogramming\cmodelx.h(76): warning C4018: '<' : signed と unsigned の数値を比較しようとしました。
+     1>c:\users\81802\desktop\repository gameprograming\game-programing\ゲームプログラミング実習2021\gameprogramming\cmodelx.h(158): warning C4018: '<' : signed と unsigned の数値を比較しようとしました。
+     1>c:\users\81802\desktop\repository gameprograming\game-programing\ゲームプログラミング実習2021\gameprogramming\cmodelx.h(188): warning C4018: '<' : signed と unsigned の数値を比較しようとしました。
+     1>c:\users\81802\desktop\repository gameprograming\game-programing\ゲームプログラミング実習2021\gameprogramming\cmodelx.h(235): warning C4018: '<' : signed と unsigned の数値を比較しようとしました。
+     1>c:\users\81802\desktop\repository gameprograming\game-programing\ゲームプログラミング実習2021\gameprogramming\cmodelx.h(240): warning C4018: '<' : signed と unsigned の数値を比較しようとしました。
+     1>c:\users\81802\desktop\repository gameprograming\game-programing\ゲームプログラミング実習2021\gameprogramming\cmodelx.h(248): warning C4018: '<' : signed と unsigned の数値を比較しようとしました。
+     1>c:\users\81802\desktop\repository gameprograming\game-programing\ゲームプログラミング実習2021\gameprogramming\cmodelx.h(253): warning C4018: '<' : signed と unsigned の数値を比較しようとしました。
+         コードを生成中...
+         コンパイル中...
+         CSceneGame.cpp
+     1>c:\users\81802\desktop\repository gameprograming\game-programing\ゲームプログラミング実習2021\gameprogramming\cmodelx.h(76): warning C4018: '<' : signed と unsigned の数値を比較しようとしました。
+     1>c:\users\81802\desktop\repository gameprograming\game-programing\ゲームプログラミング実習2021\gameprogramming\cmodelx.h(158): warning C4018: '<' : signed と unsigned の数値を比較しようとしました。
+     1>c:\users\81802\desktop\repository gameprograming\game-programing\ゲームプログラミング実習2021\gameprogramming\cmodelx.h(188): warning C4018: '<' : signed と unsigned の数値を比較しようとしました。
+     1>c:\users\81802\desktop\repository gameprograming\game-programing\ゲームプログラミング実習2021\gameprogramming\cmodelx.h(235): warning C4018: '<' : signed と unsigned の数値を比較しようとしました。
+     1>c:\users\81802\desktop\repository gameprograming\game-programing\ゲームプログラミング実習2021\gameprogramming\cmodelx.h(240): warning C4018: '<' : signed と unsigned の数値を比較しようとしました。
+     1>c:\users\81802\desktop\repository gameprograming\game-programing\ゲームプログラミング実習2021\gameprogramming\cmodelx.h(248): warning C4018: '<' : signed と unsigned の数値を比較しようとしました。
+     1>c:\users\81802\desktop\repository gameprograming\game-programing\ゲームプログラミング実習2021\gameprogramming\cmodelx.h(253): warning C4018: '<' : signed と unsigned の数値を比較しようとしました。
+         コードを生成中...
+         スキップ中... (関連する変更は検出されませんでした)
+         CRes.cpp
+         CPlayer.cpp
+         CModelX.cpp
+         CModel.cpp
+         CMaterial.cpp
+         CEnemy2.cpp
+         CEnemy.cpp
+         CEffect.cpp
+         CCollisionManager.cpp
+         CColliderTriangle.cpp
+         CColliderMesh.cpp
+         CColliderLine.cpp
+         CCollider.cpp
+         CCharacter.cpp
+         CBullet.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\81802\Desktop\Repository GamePrograming\Game-Programing\ゲームプログラミング実習2021\Debug\GameProgramming.exe" /INCREMENTAL /NOLOGO glew32.lib glfw3.lib glfw3dll.lib glut32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\81802\Desktop\Repository GamePrograming\Game-Programing\ゲームプログラミング実習2021\Debug\GameProgramming.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\81802\Desktop\Repository GamePrograming\Game-Programing\ゲームプログラミング実習2021\Debug\GameProgramming.lib" /MACHINE:X86 Debug\CBillBoard.obj
+         Debug\CBullet.obj
+         Debug\CCamera.obj
+         Debug\CCharacter.obj
+         Debug\CCollider.obj
+         Debug\CColliderLine.obj
+         Debug\CColliderMesh.obj
+         Debug\CColliderTriangle.obj
+         Debug\CCollisionManager.obj
+         Debug\CEffect.obj
+         Debug\CEnemy.obj
+         Debug\CEnemy2.obj
+         Debug\CKey.obj
+         Debug\CMaterial.obj
+         Debug\CMatrix.obj
+         Debug\CModel.obj
+         Debug\CModelX.obj
+         Debug\CPlayer.obj
+         Debug\CRes.obj
+         Debug\CSceneGame.obj
+         Debug\CSceneManager.obj
+         Debug\CSound.obj
+         Debug\CTaskManager.obj
+         Debug\CText.obj
+         Debug\CTexture.obj
+         Debug\CTransform.obj
+         Debug\CTriangle.obj
+         Debug\CUtil.obj
+         Debug\CVector.obj
+         Debug\main.obj
+         GameProgramming.vcxproj -> C:\Users\81802\Desktop\Repository GamePrograming\Game-Programing\ゲームプログラミング実習2021\Debug\GameProgramming.exe
+     1>プロジェクト "C:\Users\81802\Desktop\Repository GamePrograming\Game-Programing\ゲームプログラミング実習2021\GameProgramming\GameProgramming.vcxproj" (Build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:04.69
