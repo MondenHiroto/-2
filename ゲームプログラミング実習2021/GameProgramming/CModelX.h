@@ -54,6 +54,10 @@ public:
 	std::vector<CMaterial*> mMaterial; //マテリアルデータ
 	//スキンウェイト
 	std::vector<CSkinWeights*> mSkinWeights;
+
+	CVector *mpAnimateVertex; //アニメーション用頂点
+	CVector *mpAnimateNormal; //アニメーション用法線
+
 	//コンストラクタ
 	CMesh()
 		: mVertexNum(0)
@@ -65,6 +69,8 @@ public:
 		, mMaterialNum(0)
 		, mMaterialIndexNum(0)
 		, mpMaterialIndex(nullptr)
+		, mpAnimateVertex(nullptr)
+		, mpAnimateNormal(nullptr)
 	{}
 	//デストラクタ
 	~CMesh(){
@@ -72,6 +78,8 @@ public:
 		SAFE_DELETE_ARRAY(mpVertexIndex);
 		SAFE_DELETE_ARRAY(mpNormal);
 		SAFE_DELETE_ARRAY(mpMaterialIndex);
+		SAFE_DELETE_ARRAY(mpAnimateVertex);
+		SAFE_DELETE_ARRAY(mpAnimateNormal);
 		//スキンウェイトの削除
 		for (int i = 0; i < mSkinWeights.size(); i++){
 			delete mSkinWeights[i];
@@ -81,6 +89,9 @@ public:
 	void Init(CModelX *model);
 
 	void Render();
+
+	//頂点にアニメーション適用
+	void AnimateVertex(CModelX *model);
 };
 
 //CModelXFrameクラスの定義
@@ -104,6 +115,11 @@ public:
 		SAFE_DELETE_ARRAY(mpName);
 	}
 	void Render();
+
+	CMatrix mCombinedMatrix; //合成行列
+
+	//合成行列の作成
+	void AnimateCombined(CMatrix* parent);
 };
 
 /*
@@ -203,6 +219,11 @@ public:
 
 	void Render();
 
+	//スキンウェイトのフレーム番号設定
+	void SetSkinWeightFrameIndex();
+
+
+
 	//フレーム名に該当するフレームのアドレスを返す
 	//CModelXFrame* FindFrame(char* name);
 
@@ -278,11 +299,27 @@ public:
 								(animation->mpKey[k].mTime - animation->mpKey[k - 1].mTime);
 							frame->mTransformMatrix +=
 								(animation->mpKey[k - 1].mMatrix * r + animation->mpKey[k].mMatrix * (1 - r)) * anim->mWeight;
+							break;
 						}
 					}
 				}
 				printf("Frame.%s\n", frame->mpName);
 				frame->mTransformMatrix.Print();
+			}
+		}
+	}
+
+	/*
+	AnimateVertex
+	頂点にアニメーションを適用する
+	*/
+	void CModelX::AnimateVertex(){
+		//フレーム数分繰り返し
+		for (int i = 0; i < mFrame.size(); i++){
+			//メッシュに面があれば
+			if (mFrame[i]->mMesh.mFaceNum > 0){
+				//頂点をアニメーションで更新する
+				mFrame[i]->mMesh.AnimateVertex(this);
 			}
 		}
 	}
